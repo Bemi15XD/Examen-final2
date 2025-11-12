@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Examen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+<body>
+    <header>
+  
+
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | Examen</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+  }
+
+  header {
+    background: #339;
+    color: pink;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    text-decoration: Hola;
+    font-weight: bold;
+    color: #339;
+  }
+
+  nav a.activo {
+    color: pink;
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  .galeria img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.6s ease; /* transición suave */
+  }
+
+  /* 🔹 Clase que aplica la rotación */
+  .rotar {
+    transform: rotate(360deg);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Examen</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="Videos.html">Videos</a>
+  <a href="Galeria.html" class="activo">Galería</a>
+  <a href="contacto.html">contacto</a>
+</nav>
+
+<main>
+  <h2>Galería de Imágenes Giratorias</h2>
+  <div class="galeria">
+    <img src="img/CEcytem.JPG" alt="A">
+    <img src="img/cecytem2.JPG" alt="E">
+    <img src="img/cECYTEM5.JPG" alt="J">
+    <img src="img/1.jpg" alt="nose">
+    <img src="img/2.jpg" alt="o">
+    <img src="img/3.jpg" alt="u">
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 - Examen</p>
+</footer>
+
+<script>
+  // 🔹 Script: hace que cada imagen gire al hacer clic
+  document.querySelectorAll('.galeria img').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('rotar');
+    });
+  });
+</script>
+
+</body>
+</html>
