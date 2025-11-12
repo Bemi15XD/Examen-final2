@@ -1,0 +1,88 @@
+-<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Examen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        .contacto-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .contacto-info {
+            width: 50%;
+            padding-right: 20px;
+        }
+
+        .mapa {
+            width: 50%;
+            text-align: right; 
+        }
+
+        iframe {
+            width: 90%; 
+            height: 350px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .contacto-container {
+                flex-direction: column;
+            }
+
+            .contacto-info, .mapa {
+                width: 100%;
+                text-align: center;
+            }
+
+            iframe {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Videos.html">Videos</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <section>
+         <section>
+            <h2>Contactame</h2>
+
+            <div class="contacto-container">
+             <!-- Texto a la izquierda -->
+             <div class="contacto-info">
+                
+                <h1><a href=brandonernestomaranonibarra@gmail.com> </a></h1>
+                <p> puedes visitarme en la siguiente ubicación:</p> </div>
+             </div>
+          </section>
+            <div class="mapa">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3015203861496!2d-98.97676122456572!3d19.442562640362187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e4819c1d7ce5%3A0x19bd56ab9c18548d!2sCECYTEM%20CHIMALHUAC%C3%81N%20II!5e0!3m2!1ses-419!2smx!4v1762909509938!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+    </section>
+
+    <section>
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYJlS6Dua5M1XFlxufiMn-6AHRMEMePnJVOHUlZXgdhtoAQg/viewform?embedded=true" width="640" height="922" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Examen</p>
+    </footer>
+</body>
+</html>
